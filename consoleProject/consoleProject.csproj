@@ -10,7 +10,7 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <Reference Include="BethanysPieShopHRM.Logic.dll">
-    <HintPath>../References/libs/BethanysPieShopHRM.Logic.dll</HintPath>
-  </Reference>
+      <HintPath>../References/libs/BethanysPieShopHRM.Logic.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

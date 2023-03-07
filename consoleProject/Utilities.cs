@@ -9,7 +9,7 @@ namespace consoleProject
 {
     internal class Utilities
     {
-        private static string directory = @"D:\data\BethanysPieShopHRM\";
+        private static string directory = @"../data";
         private static string fileName = "employees.txt";
 
         internal static void RegisterEmployee(List<Employee> employees)
@@ -90,12 +90,12 @@ namespace consoleProject
 
         internal static void CheckForExistingEmployeeFile()
         {
-            string path = $"{directory}{fileName}";
+            string path = $"{directory}/{fileName}";
             bool existingFileFound = File.Exists(path);
 
             if (existingFileFound)
             {
-                Console.WriteLine("An existing file with Employee data is found.");
+                Console.WriteLine("Existing file found");
             }
             else
             {
@@ -103,7 +103,7 @@ namespace consoleProject
                 {
                     Directory.CreateDirectory(directory);
                     Console.ForegroundColor = ConsoleColor.Blue;
-                    Console.WriteLine("Directory is ready for saving files.");
+                    Console.WriteLine("Directory is ready for saving");
                     Console.ResetColor();
                 }
             }
@@ -119,7 +119,7 @@ namespace consoleProject
 
         internal static void LoadEmployees(List<Employee> employees)
         {
-            string path = $"{directory}{fileName}";
+            string path = $"{directory}/{fileName}";
             try
             {
                 if (File.Exists(path))
@@ -165,7 +165,7 @@ namespace consoleProject
                     }
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine($"Loaded {employees.Count} employees!\n\n");
-                    //Console.ResetColor();
+                    Console.ResetColor();
                 }
             }
             catch (IndexOutOfRangeException iex)
@@ -199,7 +199,7 @@ namespace consoleProject
 
         internal static void SaveEmployees(List<Employee> employees)
         {
-            string path = $"{directory}{fileName}";
+            string path = $"{directory}/{fileName}";
             StringBuilder sb = new StringBuilder();
             foreach (Employee employee in employees)
             {
@@ -207,14 +207,14 @@ namespace consoleProject
                 sb.Append($"firstName:{employee.FirstName};");
                 sb.Append($"lastName:{employee.LastName};");
                 sb.Append($"email:{employee.Email};");
-                sb.Append($"birthDay:{employee.BirthDay.ToShortDateString()};");
+                sb.Append($"birthday:{employee.BirthDay};");
                 sb.Append($"hourlyRate:{employee.HourlyRate};");
                 sb.Append($"type:{type};");
                 sb.Append(Environment.NewLine);
             }
             File.WriteAllText(path, sb.ToString());
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Saved employees successfully");
+            Console.WriteLine("Saved success");
             Console.ResetColor();
         }
 

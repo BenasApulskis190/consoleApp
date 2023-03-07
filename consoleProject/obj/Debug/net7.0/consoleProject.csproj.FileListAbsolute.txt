@@ -1,3 +1,4 @@
+/Users/benas.apulskis/Projects/consoleApp/consoleProject/obj/Debug/net7.0/consoleProject.csproj.AssemblyReference.cache
 /Users/benas.apulskis/Projects/consoleApp/consoleProject/bin/Debug/net7.0/consoleProject
 /Users/benas.apulskis/Projects/consoleApp/consoleProject/bin/Debug/net7.0/consoleProject.deps.json
 /Users/benas.apulskis/Projects/consoleApp/consoleProject/bin/Debug/net7.0/consoleProject.runtimeconfig.json
@@ -5,7 +6,6 @@
 /Users/benas.apulskis/Projects/consoleApp/consoleProject/bin/Debug/net7.0/consoleProject.pdb
 /Users/benas.apulskis/Projects/consoleApp/consoleProject/bin/Debug/net7.0/Newtonsoft.Json.dll
 /Users/benas.apulskis/Projects/consoleApp/consoleProject/bin/Debug/net7.0/BethanysPieShopHRM.Logic.dll
-/Users/benas.apulskis/Projects/consoleApp/consoleProject/obj/Debug/net7.0/consoleProject.csproj.AssemblyReference.cache
 /Users/benas.apulskis/Projects/consoleApp/consoleProject/obj/Debug/net7.0/consoleProject.GeneratedMSBuildEditorConfig.editorconfig
 /Users/benas.apulskis/Projects/consoleApp/consoleProject/obj/Debug/net7.0/consoleProject.AssemblyInfoInputs.cache
 /Users/benas.apulskis/Projects/consoleApp/consoleProject/obj/Debug/net7.0/consoleProject.AssemblyInfo.cs
